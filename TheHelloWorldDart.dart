@@ -1,5 +1,4 @@
 // First Program in Dart to get started.
-// Requirements: Dart sdk should be installed.
 
 void main() {
   print("Hello World!");
