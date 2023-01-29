@@ -87,7 +87,7 @@ void main() {
 
 ---
 
-## Dart Programming Language Frequently Asked Questions:
+## Dart Programming Language Frequently Asked Questions with detailed Answer:
 
 **Q1.** What is Dart, and what is it used for ?  
 **Ans:** Dart is a programming language developed by Google. 
@@ -132,7 +132,7 @@ Dart is used in the development of the Flutter framework for building cross-plat
 **Ans:** Yes, that's correct. Everything in Dart is an object, including numbers, strings, functions, and even null. In Dart, even basic data types such as numbers and strings are instances of classes, which means that they can be manipulated like any other object. 
 This makes Dart a fully object-oriented language, where everything is treated as an object, making it easier to write and understand code.
 
-**Q7.** What is type-checking in Dart?  
+**Q7.** What is type-checking in Dart? What is the difference between compile-time type checking and runtime type checking in Dart?   
 **Ans:** 
 Type checking in Dart is the process of testing and enforcing the constraints of types at either compile-time (i.e. statically) or runtime (i.e. dynamically).
 
@@ -173,4 +173,34 @@ void main() {
 ```
 
 Runtime type checking is an important feature of Dart, as it allows developers to write code that can adapt to changing conditions and handle different types of data at runtime. By checking the types of objects at runtime, developers can write code that is more flexible and robust, making it easier to write and maintain code.
+
+**Q8.** What are the benefits of using Dart over JavaScript?  
+**Ans:** Some of the benefits of using Dart over JavaScript include:  
+- Better performance and faster load times.
+- Strong type checking, making it easier to catch bugs and prevent errors.
+- A rich set of libraries and tools, making it easier to build complex applications.
+- Interoperability with JavaScript, allowing you to use existing JavaScript code in your Dart applications.
+
+**Q9.** What are typedefs in Dart and how are they used?  
+**Ans:** A typedef in Dart is a type alias that gives a new name to an existing type. It allows you to define a new type based on a pre-existing type, such as a function type.
+
+A typedef is declared using the typedef keyword, followed by a new name for the type, and a function signature enclosed in parentheses. For example:
+
+```
+typedef IntToString = String Function(int);
+```
+
+The above typedef creates a new type named IntToString that represents a function that takes an int parameter and returns a String result.
+
+Typedefs are particularly useful when dealing with complex function types, as they allow you to give a clear and descriptive name to the type. For example, instead of using a complex function type in a function signature, you can use a typedef instead:
+
+```
+void processData(IntToString conversionFunction) {
+  // data processing logic
+}
+```
+
+In this example, the processData function takes a parameter of type IntToString, which makes the function signature much easier to understand.
+
+Typedefs can also be used to define a new type based on a class or a mixin, making it possible to create reusable, composable types that can be used throughout your code.
 
